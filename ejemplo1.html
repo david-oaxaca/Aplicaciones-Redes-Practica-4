@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon” />
+<title>Formulario de registro</title></head>
+<body bgcolor="#e0e000">
+<center>
+<h3>Ejemplo de un HEAD request con AJAX</h3>
+<h4>Presione el boton!!</h4>
+<img src="shaq.jpg"/>
+</center>
+<hr>
+<br>
+
+<div id="demo">
+<h1>Un objeto de XMLHttpRequest</h1>
+<button type="button" onclick="loadRequest()">Presionar :b</button>
+</div>
+
+<script>
+function loadRequest() {
+  var xhttp = new XMLHttpRequest();
+  
+  xhttp.open("HEAD", "http://localhost:8000/?Apellido=Dato1&Direccion=Dato2&Telefono=121212&comentario=Dato", true);
+  xhttp.send();
+}
+</script>
+
+
+</body>
+</html>
