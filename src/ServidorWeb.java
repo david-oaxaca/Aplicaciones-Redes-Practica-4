@@ -39,7 +39,6 @@ public class ServidorWeb {
                 
                 byte[] byteData = new byte[65535];
                 int n = dis.read(byteData);
-                System.out.println("Tamaño de lo leido: " + n);
                 String datos = "";
                 if(n != -1){
                     datos = new String(byteData, 0, n, "ISO-8859-1");
